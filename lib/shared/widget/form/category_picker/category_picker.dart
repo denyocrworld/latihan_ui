@@ -5,6 +5,7 @@ class QCategoryPicker extends StatefulWidget {
   final String? label;
   final bool? wrapMode;
   final dynamic value;
+  final Clip? clipBehaviour;
 
   final Function(
     Map<String, dynamic> item,
@@ -25,6 +26,7 @@ class QCategoryPicker extends StatefulWidget {
     this.itemBuilder,
     this.value,
     this.label,
+    this.clipBehaviour,
     this.wrapMode = false,
   }) : super(key: key);
 
@@ -120,7 +122,7 @@ class _QCategoryPickerState extends State<QCategoryPicker> {
           SingleChildScrollView(
             controller: ScrollController(),
             scrollDirection: Axis.horizontal,
-            clipBehavior: Clip.none,
+            clipBehavior: widget.clipBehaviour ?? Clip.none,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -137,10 +139,18 @@ class _QCategoryPickerState extends State<QCategoryPicker> {
                 return InkWell(
                   onTap: () => updateIndex(index),
                   child: Card(
-                    color: selected ? Colors.black : null,
+                    color: selected ? Colors.grey[900] : null,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(item["label"]),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 20.0,
+                        vertical: 8.0,
+                      ),
+                      child: Text(
+                        item["label"],
+                        style: TextStyle(
+                          color: selected ? Colors.white : Colors.grey[900],
+                        ),
+                      ),
                     ),
                   ),
                 );

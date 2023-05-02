@@ -1,3 +1,4 @@
+import 'package:hyper_ui/state_util.dart';
 import 'package:hyper_ui/core.dart';
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/debug.dart';
@@ -26,7 +27,7 @@ class MainApp extends StatelessWidget {
           navigatorKey: Get.navigatorKey,
           debugShowCheckedModeBanner: false,
           theme: value,
-          home: const MainNavigationView(),
+          home: const AppListView(),
           builder: (context, child) => debugView(
             context: context,
             child: child,

@@ -1,0 +1,18 @@
+{
+    "openai_key": "",
+    "modules": [
+        "ui/food_delivery/fd_main_navigation",
+        "ui/food_delivery/fd_dashboard",
+        "ui/food_delivery/fd_product_detail",
+        "ui/food_delivery/fd_order_track",
+        "ui/emoney/em_main_navigation",
+        "ui/emoney/em_wallet",
+        "ui/emoney/em_statistic",
+        "ui/emoney/em_dashboard",
+        "ui/travel/tv_main_navigation",
+        "ui/travel/tv_dashboard",
+        "ui/travel/tv_seat_picker",
+        "ui/travel/tv_booking_detail",
+        "ui/app_list"
+    ]
+}
