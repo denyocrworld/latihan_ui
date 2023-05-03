@@ -28,6 +28,7 @@ class MainApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: value,
           home: const AppListView(),
+          // home: const MessageListView(),
           builder: (context, child) => debugView(
             context: context,
             child: child,

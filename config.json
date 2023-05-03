@@ -13,6 +13,12 @@
         "ui/travel/tv_dashboard",
         "ui/travel/tv_seat_picker",
         "ui/travel/tv_booking_detail",
-        "ui/app_list"
+        "ui/app_list",
+        "login",
+        "product_list",
+        "product_detail",
+        "product_form",
+        "message_list",
+        "server_error"
     ]
 }
