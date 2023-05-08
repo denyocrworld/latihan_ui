@@ -2,6 +2,11 @@ import 'package:hyper_ui/core.dart';
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/debug.dart';
 
+/*
+Join Kelas Online /w DenyOcr
+Dapatkan harga Flash Sale hari ini! Buka:
+? capekngoding.com
+*/
 void main() async {
   await initialize();
   Get.mainTheme.value = getDarkTheme();
