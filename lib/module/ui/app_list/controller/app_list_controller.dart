@@ -41,6 +41,12 @@ class AppListController extends State<AppListView> implements MvcController {
       "icon": Icons.login,
       "page": const LoginView(),
       "theme": getDefaultTheme(),
+    },
+    {
+      "label": "DemoView",
+      "icon": Icons.login,
+      "page": const DemoView(),
+      "theme": getDarkTheme(),
     }
   ];
 }

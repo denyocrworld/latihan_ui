@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/service/product_service/product_service.dart';
 import 'package:hyper_ui/state_util.dart';
 import '../view/product_list_view.dart';
 
@@ -11,7 +10,6 @@ class ProductListController extends State<ProductListView>
   @override
   void initState() {
     instance = this;
-    getProducts();
     super.initState();
   }
 
@@ -20,15 +18,4 @@ class ProductListController extends State<ProductListView>
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
-
-  List products = [];
-  getProducts() async {
-    products = await ProductService().getProducts();
-    setState(() {});
-  }
-
-  doDelete(int id) async {
-    await ProductService().delete(id);
-    await getProducts();
-  }
 }

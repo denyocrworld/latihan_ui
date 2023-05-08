@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hyper_ui/state_util.dart';
 import '../view/tv_dashboard_view.dart';
 
-class TvDashboardController extends State<TvDashboardView> implements MvcController {
+class TvDashboardController extends State<TvDashboardView>
+    implements MvcController {
   static late TvDashboardController instance;
   late TvDashboardView view;
 

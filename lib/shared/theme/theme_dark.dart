@@ -41,5 +41,11 @@ ThemeData getDarkTheme() {
         color: Colors.white,
       ),
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.red,
+        shape: const StadiumBorder(),
+      ),
+    ),
   );
 }

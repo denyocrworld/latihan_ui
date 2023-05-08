@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hyper_ui/state_util.dart';
 import '../view/fd_order_track_view.dart';
 
-class FdOrderTrackController extends State<FdOrderTrackView> implements MvcController {
+class FdOrderTrackController extends State<FdOrderTrackView>
+    implements MvcController {
   static late FdOrderTrackController instance;
   late FdOrderTrackView view;
 

@@ -19,6 +19,7 @@
         "product_detail",
         "product_form",
         "message_list",
-        "server_error"
+        "server_error",
+        "demo"
     ]
 }
