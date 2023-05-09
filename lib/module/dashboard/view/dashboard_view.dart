@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import 'package:hyper_ui/module/dashboard/widget/favorite_product.dart';
+import 'package:hyper_ui/module/dashboard/widget/top_product.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({Key? key}) : super(key: key);
@@ -45,24 +47,32 @@ class DashboardView extends StatefulWidget {
         child: Container(
           padding: const EdgeInsets.all(10.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueGrey,
                 ),
-                onPressed: () => Get.to(const ProductListView()),
-                child: const Text("Product List"),
+                onPressed: () => ProductService().generateProducts(),
+                child: const Text("Generate Dummy"),
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueGrey,
+              //item_card
+              const Text(
+                "Top products",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
                 ),
-                onPressed: () => Get.to(const MessageListView()),
-                child: const Text("Message List"),
               ),
+              const TopProductView(),
+              const Text(
+                "Favorite products",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const FavoriteProductView(),
             ],
           ),
         ),

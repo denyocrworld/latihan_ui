@@ -11,7 +11,15 @@ class ProfileView extends StatefulWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Profile"),
-        actions: const [],
+        actions: [
+          IconButton(
+            onPressed: () => controller.doLogout(),
+            icon: const Icon(
+              Icons.logout,
+              size: 24.0,
+            ),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Container(

@@ -23,6 +23,7 @@ class LoginView extends StatefulWidget {
                   child: Column(
                     children: [
                       QTextField(
+                        key: const Key("email"),
                         label: "Email",
                         hint: "Your email",
                         validator: Validator.email,
@@ -32,6 +33,7 @@ class LoginView extends StatefulWidget {
                         },
                       ),
                       QTextField(
+                        key: const Key("password"),
                         label: "Password",
                         hint: "Your password",
                         obscure: true,
@@ -51,6 +53,14 @@ class LoginView extends StatefulWidget {
                           backgroundColor: Colors.blueGrey,
                         ),
                         onPressed: () => controller.doLogin(),
+                      ),
+                      ElevatedButton.icon(
+                        icon: const Icon(Icons.login),
+                        label: const Text("Google Login"),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red,
+                        ),
+                        onPressed: () => controller.doGoogleLogin(),
                       ),
                     ],
                   ),

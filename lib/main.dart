@@ -43,7 +43,7 @@ class _MainAppState extends State<MainApp> {
           navigatorKey: Get.navigatorKey,
           debugShowCheckedModeBanner: false,
           theme: value,
-          home: const AppListView(),
+          home: const MainNavigationView(),
           builder: (context, child) {
             return debugView(
               context: context,
