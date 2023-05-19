@@ -94,13 +94,13 @@ class TvBookingDetailView extends StatefulWidget {
                       margin: const EdgeInsets.all(30.0),
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      child: Column(
+                      child: const Column(
                         children: [
-                          const SizedBox(
+                          SizedBox(
                             height: 24.0,
                           ),
                           Row(
-                            children: const [
+                            children: [
                               Expanded(
                                 child: Text(
                                   "Executive",
@@ -120,7 +120,7 @@ class TvBookingDetailView extends StatefulWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 80.0,
                           ),
                           Row(
@@ -128,7 +128,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "From",
                                       style: TextStyle(
@@ -150,7 +150,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "To",
                                       style: TextStyle(
@@ -171,7 +171,7 @@ class TvBookingDetailView extends StatefulWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 20.0,
                           ),
                           Row(
@@ -179,7 +179,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Depature",
                                       style: TextStyle(
@@ -201,7 +201,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Arrival",
                                       style: TextStyle(
@@ -222,7 +222,7 @@ class TvBookingDetailView extends StatefulWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 20.0,
                           ),
                           Row(
@@ -230,7 +230,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Class",
                                       style: TextStyle(
@@ -252,7 +252,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Seat",
                                       style: TextStyle(
@@ -273,7 +273,7 @@ class TvBookingDetailView extends StatefulWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 20.0,
                           ),
                           Row(
@@ -281,7 +281,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Passenger",
                                       style: TextStyle(
@@ -303,7 +303,7 @@ class TvBookingDetailView extends StatefulWidget {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Baggage",
                                       style: TextStyle(

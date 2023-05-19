@@ -102,12 +102,12 @@ class FdProductDetailView extends StatefulWidget {
                   const SizedBox(
                     height: 20.0,
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Size",
                               style: TextStyle(
@@ -131,7 +131,7 @@ class FdProductDetailView extends StatefulWidget {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Calories",
                               style: TextStyle(
@@ -155,7 +155,7 @@ class FdProductDetailView extends StatefulWidget {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Cooking",
                               style: TextStyle(

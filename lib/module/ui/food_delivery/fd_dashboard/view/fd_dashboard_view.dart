@@ -16,11 +16,11 @@ class FdDashboardView extends StatefulWidget {
           },
           icon: const Icon(Icons.apps),
         ),
-        title: Column(
+        title: const Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
+            Text(
               "Current location",
               style: TextStyle(
                 fontSize: 10.0,
@@ -30,7 +30,7 @@ class FdDashboardView extends StatefulWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Icon(
                   Icons.place,
                   size: 18.0,
@@ -338,9 +338,9 @@ class FdDashboardView extends StatefulWidget {
                         const SizedBox(
                           height: 4.0,
                         ),
-                        Row(
+                        const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Text(
                               "30 Min",
                               style: TextStyle(

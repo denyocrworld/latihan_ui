@@ -19,10 +19,10 @@ class TvSeatPickerView extends StatefulWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 children: [
                   Row(
-                    children: const [
+                    children: [
                       Icon(
                         Icons.square,
                         size: 24.0,
@@ -39,11 +39,11 @@ class TvSeatPickerView extends StatefulWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 12.0,
                   ),
                   Row(
-                    children: const [
+                    children: [
                       Icon(
                         Icons.square,
                         size: 24.0,
@@ -60,11 +60,11 @@ class TvSeatPickerView extends StatefulWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 12.0,
                   ),
                   Row(
-                    children: const [
+                    children: [
                       Icon(
                         Icons.square,
                         size: 24.0,
@@ -281,8 +281,8 @@ class TvSeatPickerView extends StatefulWidget {
             ),
             child: Column(
               children: [
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Expanded(
                       child: Text(
                         "Selected seat",
@@ -303,8 +303,8 @@ class TvSeatPickerView extends StatefulWidget {
                 const SizedBox(
                   height: 12.0,
                 ),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Expanded(
                       child: Text(
                         "Price",

@@ -69,8 +69,8 @@ class EmDashboardView extends StatefulWidget {
               const SizedBox(
                 height: 6.0,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Icon(
                     MdiIcons.flag,
                     size: 14.0,
@@ -96,8 +96,8 @@ class EmDashboardView extends StatefulWidget {
               const SizedBox(
                 height: 20.0,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Expanded(
                     child: Text(
                       "Some things you can do here 🔥",
@@ -188,8 +188,8 @@ class EmDashboardView extends StatefulWidget {
               const SizedBox(
                 height: 20.0,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Text(
                     "Quick Send",
                     style: TextStyle(

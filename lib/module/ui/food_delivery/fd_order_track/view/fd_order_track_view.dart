@@ -70,22 +70,22 @@ class FdOrderTrackView extends StatefulWidget {
             decoration: const BoxDecoration(
               color: Colors.white,
             ),
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
-                    const CircleAvatar(
+                    CircleAvatar(
                       backgroundImage: NetworkImage(
                         "https://i.ibb.co/PGv8ZzG/me.jpg",
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 12.0,
                     ),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             "Hasbi Rahman",
                             style: TextStyle(
@@ -105,17 +105,17 @@ class FdOrderTrackView extends StatefulWidget {
                         ],
                       ),
                     ),
-                    const CircleAvatar(
+                    CircleAvatar(
                       backgroundColor: Color(0xffff4e01),
                       child: Icon(
                         MdiIcons.chat,
                         color: Colors.white,
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 8.0,
                     ),
-                    const CircleAvatar(
+                    CircleAvatar(
                       backgroundColor: Color(0xffff4e01),
                       child: Icon(
                         MdiIcons.phone,
@@ -124,19 +124,19 @@ class FdOrderTrackView extends StatefulWidget {
                     ),
                   ],
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20.0,
                 ),
                 Row(
                   children: [
-                    const CircleAvatar(
+                    CircleAvatar(
                       backgroundColor: Colors.white,
                       child: Icon(
                         MdiIcons.circleMedium,
                         color: Color(0xffff4e01),
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 12.0,
                     ),
                     Expanded(
@@ -144,7 +144,7 @@ class FdOrderTrackView extends StatefulWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
-                            children: const [
+                            children: [
                               Text(
                                 "On the way",
                                 style: TextStyle(
@@ -165,10 +165,10 @@ class FdOrderTrackView extends StatefulWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 6.0,
                           ),
-                          const Text(
+                          Text(
                             "Jln. Extravaganza No. 14, Bogor",
                             style: TextStyle(
                               fontSize: 14.0,

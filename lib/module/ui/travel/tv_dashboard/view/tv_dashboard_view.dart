@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
-import 'package:hyper_ui/shared/widget/form/counter_picker/counter_picker.dart';
 
 class TvDashboardView extends StatefulWidget {
   const TvDashboardView({Key? key}) : super(key: key);
@@ -16,8 +15,8 @@ class TvDashboardView extends StatefulWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Expanded(
                       child: Text(
                         "Hello, Danny",
@@ -152,11 +151,11 @@ class TvDashboardView extends StatefulWidget {
                                   },
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
+                              const Padding(
+                                padding: EdgeInsets.all(8.0),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "-",
                                       style: TextStyle(

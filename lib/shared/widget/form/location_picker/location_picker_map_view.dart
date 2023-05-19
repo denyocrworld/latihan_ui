@@ -152,11 +152,11 @@ class LocationPickerMapState extends State<LocationPickerMap> {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width / 2,
                 height: 50.0,
-                child: Card(
+                child: const Card(
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const <Widget>[
+                    children: <Widget>[
                       SizedBox(
                         child: Text("Updating Location..."),
                       ),

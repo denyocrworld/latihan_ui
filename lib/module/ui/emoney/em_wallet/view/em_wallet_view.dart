@@ -9,8 +9,8 @@ class EmWalletView extends StatefulWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          children: const [
+        title: const Row(
+          children: [
             Icon(
               Icons.add,
               size: 24.0,
@@ -123,8 +123,8 @@ class EmWalletView extends StatefulWidget {
               const SizedBox(
                 height: 20.0,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Expanded(
                     child: Text(
                       "Latest Activity",
